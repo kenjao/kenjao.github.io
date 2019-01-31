@@ -26,6 +26,7 @@
     function run(){
         console.log("About to start Status: "+ JEEFACETRANSFERAPI.ready);
 
+		
 
         if(JEEFACETRANSFERAPI.ready){
             console.log("Face is ready to initialize");
@@ -55,7 +56,7 @@
     function init(){
         var spec = {
             canvasId:"canvasId",
-            NNCpath:"./dist/",
+            NNCpath:"./",
             callbackReady: function(errCode) {
                 console.log("Face ready for Liveness Errors "+ errCode);
             },
